@@ -1,0 +1,158 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 1440px;
+    height: 3750px;
+
+    background: #FFFFFF;
+}
+/* ----------------
+    Header start 
+---------------------*/
+
+/* Copa America Details */
+ .copa-america{
+    display: flex;
+    justify-content: space-around;
+    width: 1440px;
+    height: 677px; 
+    background: #2D25A0;
+   
+
+}
+.copa-america-details{
+    width: 485px;
+    height: 230px;
+   
+} 
+h3{
+    font-weight: bold;
+    font-size: 64px;
+    color: #FFFFFF;
+}
+button{
+    width: 168px;
+    height: 44px;
+    font-size: 16px;
+    padding: 10px 24px;
+    color: #FFFFFF;
+    background: #E02C6D;
+}
+.thumbnail{
+    width: 556.01px;
+    height: 438px;
+    margin-top: 49px;
+    
+}
+.copa-america:hover .thumbnail{
+    transform: scale(1.2)  skew(-25deg) rotate(25deg);
+    transition: transform 1s ease-in-out;
+}
+
+
+/* player section */
+.player-details{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    overflow: hidden;
+}
+img{
+    width: 100%; 
+   
+
+}
+.player-info{
+    width: 300px;
+    height: 256px;
+}
+
+/* Highlight section */
+
+.highlights{
+    display: flex;
+    justify-content: space-around;
+}
+.highlight-details{
+    width: 466px;
+    height: 309px;
+    margin-top: 224px;
+}
+h2{
+    font-weight: bold;
+    font-size: 48px;
+    color: #0A0826;
+}
+.banner{
+    width: 567px;
+    height: 427px;
+    margin-top: 165px;
+
+}
+/* Footer Start */
+footer{
+    display: flex;
+    justify-content: center ;
+    margin-top: 178px;
+}
+.logo-details{
+    width: 483.87px;
+    height: 213px;
+}
+.font-awesome{
+    display: flex;
+    justify-content: center;
+}
+ a{
+    margin: 14px;
+    color:  #969BAB;
+}
+
+small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 20px;
+    
+    
+}
+
+/* Footer End */
+
+/* Media Queries */
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlights, .copa-america{
+        flex-direction: column;
+        align-items: center;
+    }
+    .copa-america, .copa-america-details, .thumbnail{
+        height: 100%;
+    }
+    .thumbnail{
+        padding-bottom: 49px;
+    }  
+}
+/* Tablet Devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
